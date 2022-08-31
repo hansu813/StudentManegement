@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학생 성적 관리 시스템</title>
+    <script src="JS/Student.js"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" style="margin-bottom: 40px">
+        <h2>IT Academy Manegement System</h2>
+      </div>
+      <div class="item">
+        <label for="ssn">번호</label>
+        <input type="text" id="ssn" class="text-radius" />
+        <button class="btn" type="button">조회</button>
+        <button class="btn" type="button">삭제</button>
+      </div>
+      <div class="item">
+        <label for="name">이름</label>
+        <input type="text" id="name" class="text-radius" />
+        <button class="btn" type="button">검색</button>
+      </div>
+      <div class="item">
+        <label for="korean">국어</label>
+        <input type="text" id="korean" class="text-radius" />
+        <label for="english">영어</label>
+        <input type="text" id="english" class="text-radius" />
+      </div>
+      <div item>
+        <label for="math">수학</label>
+        <input type="text" id="math" class="text-radius" />
+        <button class="btn" type="button">등록</button>
+        <button class="btn" type="button">전체검색</button>
+      </div>
+      <div class="list">
+        <table>
+          <tr>
+            <th>학번</th>
+            <th>이름</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>총점</th>
+            <th>평균</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>강감찬</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
+            <td>100.0</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>이순신</td>
+            <td>99</td>
+            <td>99</td>
+            <td>99</td>
+            <td>297</td>
+            <td>99.0</td>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
