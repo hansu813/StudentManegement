@@ -1,4 +1,8 @@
 class Student {
+
+  // static property
+  static schoolName = 'KOREA IT SCHOOL';
+
   constructor(ssn, name, korean, english, math) {
     this.ssn = ssn;
     this.name = name;
@@ -15,6 +19,9 @@ class Student {
   }
 
   set name(name) {
+    if(name === undefined) {
+      throw new Error('이름을 입력해주세요.');
+    }
     this._name = name;
   }
   get name() {
@@ -42,14 +49,18 @@ class Student {
     return this._math;
   }
 
-  getAverage() {
-    return ((this.korean + this.english + this.math) / 3)
-  }
   getSum() {
-    return (this.korean + this.english + this.math);
+    return this.korean + this.english + this.math;
   }
-
+  
+  getAverage() {
+    let average = (this.getSum() / 3).toFixed(2);
+    return average;
+  }
+  
   toString() {
-    return `${this.ssn}, ${this.name}, ${this.korean}, ${this.english}, ${this.math}`;
+    return `${this.ssn}, ${this.name}, ${this.korean}, ${this.english}, ${this.math},  ${this.getAverage()}`;
   }
 }
+
+export {Student};

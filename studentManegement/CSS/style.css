@@ -2,14 +2,20 @@ div.container {
   width: 500px;
   height: 500px;
   /* background-color: aqua; */
+  margin: 1em;
 }
+
+.header {
+  margin-bottom: 30px;
+}
+
 div.item {
   left: 50%;
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
-button.btn {
+.btn {
   text-align: center;
   width: 100px;
   height: 25px;
@@ -46,6 +52,7 @@ th {
   text-align: center;
   background-color: #25a4cd;
 }
+
 td {
   width: 60px;
   text-align: center;
